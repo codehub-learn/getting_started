@@ -26,11 +26,11 @@ It is recommended to setup an account in Atlas and create a free tier cluster th
 - Keep the options as is and keep also enabled the install MongoDB Compass enabled
 - When the installation ends, and if you let everythong default, an application will pop up (Compass, DBMS for mongo) which will ask you if you wish to send any reports to the developets. Do as you wish at this point.
 - After that it will prompt you for a new connection. If you let it empty it will connect to the default (localhost)
-  ![compass_init](images/compass.PNG)
+  ![compass_init](../images/compass.PNG)
 - You will be able now to see your instance and start working with it (Databases shown below are the default ones)
-  ![compass](images/compass2.PNG)
+  ![compass](../images/compass2.PNG)
 - In order to connect with the sell navigate to the directory you installed MongoDB (Something like `C:\Program Files\MongoDB\Server\4.4\bin`) with your cmd and type `mongo` and it will create a connection to your local instance
-  ![mongo_cli](images/mongoshell.PNG)
+  ![mongo_cli](../images/mongoshell.PNG)
 
 ### Linux
 
@@ -78,14 +78,14 @@ Apache CouchDB is an open-source document-oriented NoSQL database, implemented i
 ### Windows
 
 - Go to https://couchdb.apache.org/#download and get the latest 2.X version for Windows. Do _not_ get the version 3.X
-  ![windows_search](images/windows_couch_install.PNG)
+  ![windows_search](../images/windows_couch_install.PNG)
 - Run the typical wizard and keep default values
 - Complete the installation wizard
 - Search for `Fauxton` (CouchDB DBMS) and click on the result in the websites or go to your browser at http://localhost:5984/\_utils/index.html
-  ![windows_search](images/windows_couch_fauxton.PNG)
+  ![windows_search](../images/windows_couch_fauxton.PNG)
 
 - You should be able to see something like this
-  ![fauxton](images/fauxton_web.PNG)
+  ![fauxton](../images/fauxton_web.PNG)
 
 ### Linux
 
@@ -110,7 +110,7 @@ sudo apt install -y couchdb
 ```
 
 In the wizard that it will appear pick Standalone/ let the bind address as it is/ and optionally enter a password for your admin. If you do so please remember it.
-![couch_linux](../images/couch_linux.png)
+![couch_linux](../../images/couch_linux.png)
 
 Visit Fauxton when the process ends at: http://127.0.0.1:5984/_utils/#
 
@@ -129,19 +129,19 @@ Redis is a NO-SQL, key-value in-memory remote database that offers high performa
 ### Windows
 
 - Go to https://github.com/microsoftarchive/redis/releases/tag/win-3.0.504
-  ![redis_windows_release](../images/redis_windows_release.PNG)
+  ![redis_windows_release](../../images/redis_windows_release.PNG)
 
 - Download the msi file. You can download alterantively the zip file but you will need to add manually environmental variables.
 - Assuming that we are using the msi file, go over the typical installation wizard but do not forget to check the add to path variable.
-  ![alt text](../images/redis_windows_path.PNG)
+  ![alt text](../../images/redis_windows_path.PNG)
 
 - Let the port number and the add exception as it is and continue with the default values in the wizard
 - With msi installer the redis-server will automatically run in the background when the system starts
-  ![redis_process](../images/redis_windows_redis_server.PNG)
+  ![redis_process](../../images/redis_windows_redis_server.PNG)
 
 - In order to connect to the redis server open a cmd and type `redis-cli`. If everything is correct you will connect to your local instance and you will be able to start interacting with the redis server. You can try `SET key value` and it should return `OK` and then `GET key` to get the assigned value.
 
-![redis_cli](../images/redis_windows_redis_cli.PNG)
+![redis_cli](../../images/redis_windows_redis_cli.PNG)
 
 ### Linux
 
@@ -185,11 +185,11 @@ python --version
 python3 --version
 ```
 
-![alt text](../images/pythonv.png)
+![alt text](../../images/pythonv.png)
 
 Windows users please go at https://www.python.org/downloads/windows/ and get the appropriate file for your PC. Please note that during the installation you will be asked to add Python in Path. You should enable this option.
 
-![alt text](../images/pythonpath.png)
+![alt text](../../images/pythonpath.png)
 
 It allows you to run your files on cmd by:
 
