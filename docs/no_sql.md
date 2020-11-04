@@ -185,11 +185,11 @@ python --version
 python3 --version
 ```
 
-![alt text](../../images/pythonv.png)
+![alt text](../images/pythonv.png)
 
 Windows users please go at https://www.python.org/downloads/windows/ and get the appropriate file for your PC. Please note that during the installation you will be asked to add Python in Path. You should enable this option.
 
-![alt text](../../images/pythonpath.png)
+![alt text](../images/pythonpath.png)
 
 It allows you to run your files on cmd by:
 
