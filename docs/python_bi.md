@@ -42,7 +42,7 @@ python3 --version
 
 ### Windows
 
-Please check [here](https://github.com/codehub-learn/business-intelligence-devenv-setup#required-software) for detailed instructions.
+Please check [here](https://github.com/codehub-learn/MS-SQL-Server-) for detailed instructions.
 
 ### Linux
 
