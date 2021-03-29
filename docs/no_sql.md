@@ -24,7 +24,7 @@ It is recommended to setup an account in Atlas and create a free tier cluster th
 - Go to https://www.mongodb.com/try/download/community?tck=docs_server and pick your platform and package. Get the current versions (At this time 4.4.1)
   This link will provide direct download for Windos msi package for V4.4.4.1: https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-4.4.1-signed.msi
 - Keep the options as is and keep also enabled the install MongoDB Compass enabled
-- When the installation ends, and if you let everythong default, an application will pop up (Compass, DBMS for mongo) which will ask you if you wish to send any reports to the developets. Do as you wish at this point.
+- When the installation ends, and if you let everything default, an application will pop up (Compass, DBMS for mongo) which will ask you if you wish to send any reports to the developers. Do as you wish at this point.
 - After that it will prompt you for a new connection. If you let it empty it will connect to the default (localhost)
   ![compass_init](../images/compass.PNG)
 - You will be able now to see your instance and start working with it (Databases shown below are the default ones)
