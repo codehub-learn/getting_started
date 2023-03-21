@@ -13,63 +13,82 @@ You will find some instructions for windows and linux users (Ubuntu 20.04 based)
 
 ## MongoDB
 
-MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas
+MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, 
+MongoDB uses JSON-like documents with optional schemas
 
-### Cloud
+There are several installation options.
 
-It is recommended to setup an account in Atlas and create a free tier cluster there. The process is straight forward but you can find some details [here](atlas.md).
+### Atlas
 
-### Windows
+Assuming that you have Compass installed or you will install it during this process.
 
-- Go to https://www.mongodb.com/try/download/community?tck=docs_server and pick your platform and package. Get the current versions (At this time 4.4.1)
-  This link will provide direct download for Windos msi package for V4.4.4.1: https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-4.4.1-signed.msi
-- Keep the options as is and keep also enabled the install MongoDB Compass enabled
-- When the installation ends, and if you let everything default, an application will pop up (Compass, DBMS for mongo) which will ask you if you wish to send any reports to the developers. Do as you wish at this point.
-- After that it will prompt you for a new connection. If you let it empty it will connect to the default (localhost)
-  ![compass_init](../images/compass.PNG)
-- You will be able now to see your instance and start working with it (Databases shown below are the default ones)
-  ![compass](../images/compass2.PNG)
-- In order to connect with the sell navigate to the directory you installed MongoDB (Something like `C:\Program Files\MongoDB\Server\4.4\bin`) with your cmd and type `mongo` and it will create a connection to your local instance
-  ![mongo_cli](../images/mongoshell.PNG)
+This is the MongoDB cloud environment. 
+- Go to https://www.mongodb.com/cloud/atlas
+- Create an account or sign in.
+- You will be prompt to create an organization (most likely).
+  ![img.png](readme_images/img.png)
+- Create one by giving a name (let other options as is)
+  ![img.png](readme_images/org.png)
+- Skip the Add members part by clicking Create Organization
+  ![img.png](readme_images/members.png)
+- When this is done you will be directed in Projects page. Pick New Project from the upper right corner and it will land you in new project creation. Add a name and click next
+    ![img.png](readme_images/project.png)
+- Again skip the add members part and create the project
+- Then you will be prompt to create a Database:
+   ![img.png](readme_images/createdb.png)
+- Pick the free option:
+    ![img.png](readme_images/free.png)
+- In the next step you should pick Cloud provider, location etc. You can go with defaults, just check the mongo version in the bottom.
+It should be 5.0.x
+    ![img.png](readme_images/csp.png)
 
-### Linux
+    ![img.png](readme_images/mongov.png)
+- When you will click create cluster Atlas will provision your instance and this may take some minutes.
+- As soon as this is done you will be prompt to security quickstart.
+- Add username and password (something simple that you can remember for instance user/user) and create the user.
+    ![img.png](readme_images/user.png)
+- Add 0.0.0.0 in IP access list, add the entry, and keep checked the My Local Environment option.
+    ![img.png](readme_images/access.png)
+- You should be all setup now and get this prompt:
+    ![img.png](readme_images/success.png)
+    Click to go to databases
+- You will see something like this:
+  ![img_1.png](readme_images/img_1.png)
+- Click on connect and select Compass from the popup
+    ![img_2.png](readme_images/img_2.png)
+- If you do not have Compass already you can download it from here.
+- Copy the given connection string
+    ![img_3.png](readme_images/img_3.png)
+- Open compass application and in the connections create a connection with the given connection string
+    ![img_4.png](readme_images/img_4.png)
+- Click connect and you should be able to see something like this:
+![img_5.png](readme_images/img_5.png)
+- That's it! You can now query the atlas cluster from your Compass.
 
-- Get the puclic key:
 
-```
-wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
-```
+### Local
 
-- Create a list file for MongoDB and update your repo
+Go to https://www.mongodb.com/try/download/community
+- Download the package for your OS.
+- If your package manager prompts to install mongo compass allow it.
+- Go through with the default options
+- As soon as this is done search for compass applciation and open it. 
+- Use the default connection string to connect to your database
 
-```
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
-```
+### Docker
 
-```
-sudo apt-get update
-```
+- Pull the Mongo image: `docker pull mongo`
+- Execute docker run: `docker run -d -p 27017:27017 --name test-mongo mongo:latest`
+- Open Compass. use the default URI to connect `mongodb://localhost:27017`
+- You should be able to see something like this:
+    ![img_6.png](readme_images/img_6.png)
 
-- Install MongoDB package
+## Compass
 
-```cmd
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
-47
-```
-
-- You should be able now to use the service
-
-```cmd
-sudo service mongod start
-```
-
-- Connect via the cli by using:
-
-```cmd
-mongo
-```
-
-Do not forget to also install MongoDB Compass. You can test the connection as described in Windows section
+- If you did not install Compass during the Mongo installation you can go here:
+https://www.mongodb.com/try/download/compass and simply download it for your OS
+- The first time it will run it will prompt for a connection string. The default will be `mongodb://localhost:27017`
+- Use this if you have a local installation or if you run it in docker
 
 ## CouchDB
 
