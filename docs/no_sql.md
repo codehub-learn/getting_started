@@ -128,10 +128,11 @@ Redis is a NO-SQL, key-value in-memory remote database that offers high performa
 
 ### Windows
 
-- Go to https://github.com/microsoftarchive/redis/releases/tag/win-3.0.504
-  ![redis_windows_release](../images/redis_windows_release.PNG) 
+- Go to https://github.com/tporadowski/redis/releases
+  ![redis_installer](../images/redis_installer.PNG) 
 
-**Important Note:** Please keep in mind that those are discontinued repos. Alternative check https://github.com/tporadowski/redis/releases which is an unofficial repo for Windows releases. Alternatively you can use the WSL for Windows 10 and check the Linux section below. 
+**Important Note:** Please keep in mind that those are repos that are maintained from the community and they are intened for experimentation. This is the reasons which they are few versions behind. For the context of our class this versions discrepancy will not matter.
+Alternatively you can use the WSL for Windows 10 and check the Linux section below. 
 
 - Download the msi file. You can download alterantively the zip file but you will need to add manually environmental variables.
 - Assuming that we are using the msi file, go over the typical installation wizard but do not forget to check the add to path variable.
@@ -179,7 +180,7 @@ PONG
 
 ## Python
 
-We will need Python > 3.5 version in order to build some simple CRUD applications and demonstrate how to use NoSQL data stores within applications.
+We will need Python > 3.8 version in order to build some simple CRUD applications and demonstrate how to use NoSQL data stores within applications.
 Linux and Mac users should have both 2.7.x and > 3.6.x versions installed by default on their machines. You can check your current version for both of them with:
 
 ```
@@ -191,7 +192,7 @@ python3 --version
 
 Windows users please go at https://www.python.org/downloads/windows/ and get the appropriate file for your PC. Please note that during the installation you will be asked to add Python in Path. You should enable this option.
 
-![alt text](../images/pythonpath.png)
+![alt text](../images/ptyhon_installer.png)
 
 It allows you to run your files on cmd by:
 
