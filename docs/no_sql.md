@@ -35,6 +35,7 @@ This is the MongoDB cloud environment.
     ![img.png](../readme_images/project.png)
 - Again skip the add members part and create the project
 - Then you will be prompt to create a Database:
+
    ![img.png](../readme_images/createdb.png)
 - Pick the free option:
     ![img.png](../readme_images/free.png)
@@ -42,7 +43,7 @@ This is the MongoDB cloud environment.
 It should be 5.0.x
     ![img.png](../readme_images/csp.png)
 
-    ![img.png](../readme_images/mongov.png)
+![img.png](../readme_images/mongov.png)
 - When you will click create cluster Atlas will provision your instance and this may take some minutes.
 - As soon as this is done you will be prompt to security quickstart.
 - Add username and password (something simple that you can remember for instance user/user) and create the user.
@@ -50,8 +51,12 @@ It should be 5.0.x
 - Add 0.0.0.0 in IP access list, add the entry, and keep checked the My Local Environment option.
     ![img.png](../readme_images/access.png)
 - You should be all setup now and get this prompt:
+
+
     ![img.png](../readme_images/success.png)
-    Click to go to databases
+    
+    
+  Click to go to databases
 - You will see something like this:
   ![img_1.png](../readme_images/img_1.png)
 - Click on connect and select Compass from the popup
