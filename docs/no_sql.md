@@ -111,7 +111,9 @@ Apache CouchDB is an open-source document-oriented NoSQL database, implemented i
 
 - Complete the installation wizard and restart you PC
 - Search for `Fauxton` (CouchDB DBMS) and click on the result in the websites or go to your browser at http://localhost:5984/\_utils/index.html
- ![image](https://user-images.githubusercontent.com/25746825/226539165-d4cae140-a7b6-42e9-9fd3-a2c85432e835.png)
+
+
+![image](https://user-images.githubusercontent.com/25746825/226539165-d4cae140-a7b6-42e9-9fd3-a2c85432e835.png)
 
 
 - You should be able to see something like this after you login with your admin account.
