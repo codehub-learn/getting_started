@@ -77,37 +77,26 @@ Apache CouchDB is an open-source document-oriented NoSQL database, implemented i
 
 ### Windows
 
-- Go to https://couchdb.apache.org/#download and get the latest 2.X version for Windows. Do _not_ get the version 3.X
-  ![windows_search](../images/windows_couch_install.PNG)
+- Go to https://couchdb.apache.org/#download and get the latest version 3.X (3.3.1 for example)
+  ![image](https://user-images.githubusercontent.com/25746825/226538551-a6d07a20-2bac-4fa7-9e33-b65dd974982c.png)
 - Run the typical wizard and keep default values
-- Complete the installation wizard
-- Search for `Fauxton` (CouchDB DBMS) and click on the result in the websites or go to your browser at http://localhost:5984/\_utils/index.html
-  ![windows_search](../images/windows_couch_fauxton.PNG)
+- Add an admin/admin admin user when prompt
+![image](https://user-images.githubusercontent.com/25746825/226538689-e327547d-7174-4b8d-8a3f-ea1fcdbce24d.png)
+- Add a cookie value e.g "hello"
+![image](https://user-images.githubusercontent.com/25746825/226538910-2ef2bafa-cf62-4fb9-b7cb-abc98b7456d3.png)
 
-- You should be able to see something like this
-  ![fauxton](../images/fauxton_web.PNG)
+- Complete the installation wizard and restart you PC
+- Search for `Fauxton` (CouchDB DBMS) and click on the result in the websites or go to your browser at http://localhost:5984/\_utils/index.html
+ ![image](https://user-images.githubusercontent.com/25746825/226539165-d4cae140-a7b6-42e9-9fd3-a2c85432e835.png)
+
+
+- You should be able to see something like this after you login with your admin account.
+![image](https://user-images.githubusercontent.com/25746825/226539321-ccc7e33a-5ba2-4fcb-918d-810bdb0e0498.png)
+ 
 
 ### Linux
 
-- Enable Apache CouchDB packare repo
-
-```cmd
-sudo apt-get install -y gnupg ca-certificates
-```
-
-- Install needed packages
-
-```cmd
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys \
-  8756C4F765C9AC3CB6B85D62379CE192D401AB61
-```
-
-- Update repo cache and install the package
-
-```cmd
-sudo apt update
-sudo apt install -y couchdb
-```
+Follow instructions here: https://docs.couchdb.org/en/latest/install/unix.html#installation-using-the-apache-couchdb-convenience-binary-packages based on your distribution.
 
 In the wizard that it will appear pick Standalone/ let the bind address as it is/ and optionally enter a password for your admin. If you do so please remember it.
 ![couch_linux](../images/couch_linux.png)
