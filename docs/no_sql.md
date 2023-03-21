@@ -26,7 +26,7 @@ This is the MongoDB cloud environment.
 - Go to https://www.mongodb.com/cloud/atlas
 - Create an account or sign in.
 - You will be prompt to create an organization (most likely).
-  ![img.png](readme_images/img.png)
+  ![img.png](../readme_images/img.png)
 - Create one by giving a name (let other options as is)
   ![img.png](readme_images/org.png)
 - Skip the Add members part by clicking Create Organization
