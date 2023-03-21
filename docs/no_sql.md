@@ -128,8 +128,9 @@ Redis is a NO-SQL, key-value in-memory remote database that offers high performa
 
 ### Windows
 
-- Go to https://github.com/tporadowski/redis/releases
+- Go to https://github.com/tporadowski/redis/releases 
 
+  
   ![redis_installer](../images/redis_installer.PNG) 
 
 **Important Note:** Please keep in mind that those are repos that are maintained from the community and they are intened for experimentation. This is the reasons which they are few versions behind. For the context of our class this versions discrepancy will not matter.
