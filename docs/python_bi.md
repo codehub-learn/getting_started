@@ -6,11 +6,11 @@ In this github page you can find some basic guidelines of how to install the sof
 
 - Python
 - SQL Server
-- IDE of your choice (VS code recommended)
+- IDE of your choice (VS code pr PyCharm are recommended)
 
 ## Python
 
-We will need Python > 3.5 version in order to build some simple CRUD applications and ETL pipelines during the course.
+We will need Python > 3.8 version in order to build some simple CRUD applications and ETL pipelines during the course.
 
 ### Windows
 
